@@ -1,0 +1,242 @@
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP(
+  (linear): Sequential(
+    (0): Linear(in_features=1024, out_features=400, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Linear(in_features=400, out_features=400, bias=True)
+    (3): ReLU(inplace=True)
+  )
+  (last): ModuleDict(
+    (1): Linear(in_features=400, out_features=2, bias=True)
+    (2): Linear(in_features=400, out_features=2, bias=True)
+    (3): Linear(in_features=400, out_features=2, bias=True)
+    (4): Linear(in_features=400, out_features=2, bias=True)
+    (5): Linear(in_features=400, out_features=2, bias=True)
+  )
+)
+#parameter of model: 574410
+Task order: ['1', '2', '3', '4', '5']
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/469]	0.5211 (0.5211)	0.0888 (0.0888)	0.685 (0.685)	54.55 (49.22)
+[100/469]	0.0091 (0.0123)	0.0033 (0.0022)	0.016 (0.084)	100.00 (96.82)
+[200/469]	0.0083 (0.0098)	0.0024 (0.0018)	0.016 (0.060)	100.00 (97.81)
+[300/469]	0.0060 (0.0090)	0.0001 (0.0017)	0.024 (0.050)	100.00 (98.17)
+[400/469]	0.0097 (0.0086)	0.0038 (0.0016)	0.005 (0.044)	100.00 (98.41)
+[468/469]	0.0059 (0.0084)	0.0001 (0.0016)	0.015 (0.041)	100.00 (98.52)
+ * Train Acc 98.517
+ * Val Acc 99.310, Total time 0.69
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/469]	0.1128 (0.1128)	0.1030 (0.1030)	0.005 (0.005)	100.00 (100.00)
+[100/469]	0.0068 (0.0082)	0.0009 (0.0023)	0.014 (0.014)	100.00 (99.45)
+[200/469]	0.0070 (0.0077)	0.0011 (0.0019)	0.029 (0.017)	100.00 (99.35)
+[300/469]	0.0083 (0.0075)	0.0025 (0.0017)	0.036 (0.017)	100.00 (99.36)
+[400/469]	0.0067 (0.0075)	0.0009 (0.0016)	0.011 (0.018)	100.00 (99.37)
+[468/469]	0.0058 (0.0074)	0.0001 (0.0016)	0.026 (0.017)	100.00 (99.38)
+ * Train Acc 99.382
+ * Val Acc 99.310, Total time 0.72
+ * Val Acc 99.310, Total time 0.70
+OrderedDict([('All', {'All': 99.31})])
+Task All average acc: 99.31
+===Summary of experiment repeats: 1 / 5 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [99.31  0.    0.    0.    0.  ]
+mean: 19.862000000000002 std: 39.724000000000004
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP(
+  (linear): Sequential(
+    (0): Linear(in_features=1024, out_features=400, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Linear(in_features=400, out_features=400, bias=True)
+    (3): ReLU(inplace=True)
+  )
+  (last): ModuleDict(
+    (1): Linear(in_features=400, out_features=2, bias=True)
+    (2): Linear(in_features=400, out_features=2, bias=True)
+    (3): Linear(in_features=400, out_features=2, bias=True)
+    (4): Linear(in_features=400, out_features=2, bias=True)
+    (5): Linear(in_features=400, out_features=2, bias=True)
+  )
+)
+#parameter of model: 574410
+Task order: ['1', '2', '3', '4', '5']
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/469]	0.1233 (0.1233)	0.1093 (0.1093)	0.711 (0.711)	66.67 (42.19)
+[100/469]	0.0074 (0.0083)	0.0016 (0.0024)	0.015 (0.085)	100.00 (96.76)
+[200/469]	0.0060 (0.0078)	0.0002 (0.0019)	0.025 (0.060)	95.83 (97.83)
+[300/469]	0.0082 (0.0076)	0.0024 (0.0017)	0.004 (0.049)	100.00 (98.25)
+[400/469]	0.0072 (0.0075)	0.0014 (0.0016)	0.035 (0.043)	95.45 (98.48)
+[468/469]	0.0066 (0.0074)	0.0008 (0.0016)	0.003 (0.041)	100.00 (98.56)
+ * Train Acc 98.565
+ * Val Acc 99.470, Total time 0.70
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/469]	0.1173 (0.1173)	0.1073 (0.1073)	0.005 (0.005)	100.00 (100.00)
+[100/469]	0.0060 (0.0083)	0.0002 (0.0024)	0.014 (0.015)	96.00 (99.44)
+[200/469]	0.0078 (0.0079)	0.0020 (0.0019)	0.001 (0.015)	100.00 (99.47)
+[300/469]	0.0077 (0.0077)	0.0019 (0.0017)	0.002 (0.015)	100.00 (99.46)
+[400/469]	0.0060 (0.0076)	0.0002 (0.0016)	0.025 (0.015)	95.83 (99.44)
+[468/469]	0.0066 (0.0075)	0.0008 (0.0016)	0.062 (0.016)	94.74 (99.42)
+ * Train Acc 99.425
+ * Val Acc 99.240, Total time 0.69
+ * Val Acc 99.240, Total time 0.69
+OrderedDict([('All', {'All': 99.24})])
+Task All average acc: 99.24
+===Summary of experiment repeats: 2 / 5 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [99.31 99.24  0.    0.    0.  ]
+mean: 39.71 std: 48.634623880523634
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP(
+  (linear): Sequential(
+    (0): Linear(in_features=1024, out_features=400, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Linear(in_features=400, out_features=400, bias=True)
+    (3): ReLU(inplace=True)
+  )
+  (last): ModuleDict(
+    (1): Linear(in_features=400, out_features=2, bias=True)
+    (2): Linear(in_features=400, out_features=2, bias=True)
+    (3): Linear(in_features=400, out_features=2, bias=True)
+    (4): Linear(in_features=400, out_features=2, bias=True)
+    (5): Linear(in_features=400, out_features=2, bias=True)
+  )
+)
+#parameter of model: 574410
+Task order: ['1', '2', '3', '4', '5']
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/469]	0.1250 (0.1250)	0.1148 (0.1148)	0.694 (0.694)	38.46 (50.00)
+[100/469]	0.0064 (0.0083)	0.0005 (0.0023)	0.037 (0.084)	100.00 (96.97)
+[200/469]	0.0069 (0.0078)	0.0009 (0.0018)	0.055 (0.062)	90.00 (97.79)
+[300/469]	0.0082 (0.0076)	0.0023 (0.0016)	0.014 (0.052)	100.00 (98.18)
+[400/469]	0.0066 (0.0075)	0.0008 (0.0016)	0.005 (0.045)	100.00 (98.42)
+[468/469]	0.0065 (0.0074)	0.0008 (0.0015)	0.001 (0.042)	100.00 (98.55)
+ * Train Acc 98.547
+ * Val Acc 99.370, Total time 0.75
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/469]	0.1212 (0.1212)	0.1108 (0.1108)	0.015 (0.015)	100.00 (99.22)
+[100/469]	0.0067 (0.0084)	0.0009 (0.0025)	0.040 (0.015)	100.00 (99.47)
+[200/469]	0.0096 (0.0079)	0.0037 (0.0020)	0.003 (0.015)	100.00 (99.48)
+[300/469]	0.0061 (0.0077)	0.0001 (0.0018)	0.036 (0.016)	90.48 (99.44)
+[400/469]	0.0061 (0.0077)	0.0002 (0.0017)	0.014 (0.015)	96.43 (99.45)
+[468/469]	0.0060 (0.0076)	0.0001 (0.0017)	0.007 (0.016)	100.00 (99.45)
+ * Train Acc 99.455
+ * Val Acc 99.380, Total time 0.70
+ * Val Acc 99.380, Total time 0.69
+OrderedDict([('All', {'All': 99.38})])
+Task All average acc: 99.38
+===Summary of experiment repeats: 3 / 5 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [99.31 99.24 99.38  0.    0.  ]
+mean: 59.586 std: 48.6517854143093
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP(
+  (linear): Sequential(
+    (0): Linear(in_features=1024, out_features=400, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Linear(in_features=400, out_features=400, bias=True)
+    (3): ReLU(inplace=True)
+  )
+  (last): ModuleDict(
+    (1): Linear(in_features=400, out_features=2, bias=True)
+    (2): Linear(in_features=400, out_features=2, bias=True)
+    (3): Linear(in_features=400, out_features=2, bias=True)
+    (4): Linear(in_features=400, out_features=2, bias=True)
+    (5): Linear(in_features=400, out_features=2, bias=True)
+  )
+)
+#parameter of model: 574410
+Task order: ['1', '2', '3', '4', '5']
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/469]	0.1210 (0.1210)	0.1079 (0.1079)	0.700 (0.700)	42.31 (46.88)
+[100/469]	0.0062 (0.0083)	0.0003 (0.0023)	0.016 (0.094)	100.00 (96.72)
+[200/469]	0.0069 (0.0078)	0.0010 (0.0018)	0.022 (0.065)	100.00 (97.73)
+[300/469]	0.0072 (0.0076)	0.0015 (0.0017)	0.050 (0.052)	91.30 (98.17)
+[400/469]	0.0060 (0.0075)	0.0001 (0.0016)	0.013 (0.045)	100.00 (98.44)
+[468/469]	0.0065 (0.0075)	0.0008 (0.0016)	0.053 (0.042)	95.24 (98.54)
+ * Train Acc 98.542
+ * Val Acc 99.470, Total time 0.75
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/469]	0.1221 (0.1221)	0.1122 (0.1122)	0.023 (0.023)	100.00 (99.22)
+[100/469]	0.0083 (0.0085)	0.0023 (0.0024)	0.004 (0.015)	100.00 (99.51)
+[200/469]	0.0061 (0.0079)	0.0002 (0.0018)	0.001 (0.016)	100.00 (99.48)
+[300/469]	0.0070 (0.0077)	0.0011 (0.0016)	0.045 (0.017)	100.00 (99.42)
+[400/469]	0.0067 (0.0076)	0.0008 (0.0016)	0.002 (0.016)	100.00 (99.44)
+[468/469]	0.0067 (0.0075)	0.0009 (0.0015)	0.057 (0.016)	100.00 (99.45)
+ * Train Acc 99.448
+ * Val Acc 99.490, Total time 0.69
+ * Val Acc 99.490, Total time 0.71
+OrderedDict([('All', {'All': 99.49})])
+Task All average acc: 99.49
+===Summary of experiment repeats: 4 / 5 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [99.31 99.24 99.38 99.49  0.  ]
+mean: 79.48400000000001 std: 39.74208580333951
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP(
+  (linear): Sequential(
+    (0): Linear(in_features=1024, out_features=400, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Linear(in_features=400, out_features=400, bias=True)
+    (3): ReLU(inplace=True)
+  )
+  (last): ModuleDict(
+    (1): Linear(in_features=400, out_features=2, bias=True)
+    (2): Linear(in_features=400, out_features=2, bias=True)
+    (3): Linear(in_features=400, out_features=2, bias=True)
+    (4): Linear(in_features=400, out_features=2, bias=True)
+    (5): Linear(in_features=400, out_features=2, bias=True)
+  )
+)
+#parameter of model: 574410
+Task order: ['1', '2', '3', '4', '5']
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/469]	0.1169 (0.1169)	0.1036 (0.1036)	0.691 (0.691)	57.14 (49.22)
+[100/469]	0.0058 (0.0083)	0.0001 (0.0024)	0.020 (0.086)	100.00 (97.03)
+[200/469]	0.0071 (0.0078)	0.0011 (0.0018)	0.026 (0.062)	100.00 (97.85)
+[300/469]	0.0084 (0.0076)	0.0020 (0.0017)	0.008 (0.051)	100.00 (98.25)
+[400/469]	0.0061 (0.0075)	0.0002 (0.0016)	0.048 (0.045)	96.30 (98.48)
+[468/469]	0.0060 (0.0075)	0.0001 (0.0015)	0.012 (0.042)	100.00 (98.59)
+ * Train Acc 98.590
+ * Val Acc 98.940, Total time 0.74
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/469]	0.1212 (0.1212)	0.1113 (0.1113)	0.007 (0.007)	100.00 (100.00)
+[100/469]	0.0075 (0.0083)	0.0013 (0.0024)	0.010 (0.015)	100.00 (99.47)
+[200/469]	0.0060 (0.0078)	0.0001 (0.0019)	0.010 (0.016)	96.67 (99.41)
+[300/469]	0.0069 (0.0076)	0.0010 (0.0017)	0.010 (0.016)	100.00 (99.41)
+[400/469]	0.0074 (0.0075)	0.0015 (0.0016)	0.004 (0.016)	100.00 (99.42)
+[468/469]	0.0059 (0.0075)	0.0001 (0.0015)	0.002 (0.016)	100.00 (99.42)
+ * Train Acc 99.417
+ * Val Acc 99.450, Total time 0.69
+ * Val Acc 99.450, Total time 0.69
+OrderedDict([('All', {'All': 99.45})])
+Task All average acc: 99.45
+===Summary of experiment repeats: 5 / 5 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [99.31 99.24 99.38 99.49 99.45]
+mean: 99.374 std: 0.09090654541890839
+reg_coef: 0.0 mean: 99.374 std: 0.09090654541890839
+Total Time for the script is 47.985053300857544 seconds

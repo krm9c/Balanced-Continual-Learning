@@ -1,0 +1,777 @@
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP(
+  (linear): Sequential(
+    (0): Linear(in_features=1024, out_features=400, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Linear(in_features=400, out_features=400, bias=True)
+    (3): ReLU(inplace=True)
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=400, out_features=10, bias=True)
+  )
+)
+#parameter of model: 574410
+Task order: ['1', '2', '3', '4', '5']
+====================== 1 =======================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+#reg_term: 0
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/99]	0.5282 (0.5282)	0.0938 (0.0938)	0.671 (0.671)	0.00 (0.00)
+[98/99]	0.0092 (0.0123)	0.0074 (0.0060)	0.000 (0.025)	100.00 (98.48)
+ * Train Acc 98.476
+ * Val Acc 99.858, Total time 0.29
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/99]	0.1061 (0.1061)	0.1000 (0.1000)	0.000 (0.000)	100.00 (100.00)
+[98/99]	0.0020 (0.0083)	0.0001 (0.0062)	0.000 (0.003)	100.00 (99.87)
+ * Train Acc 99.874
+ * Val Acc 99.811, Total time 0.25
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 99.811, Total time 0.24
+====================== 2 =======================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+#reg_term: 1
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/95]	0.1048 (0.1048)	0.0954 (0.0954)	3.511 (3.511)	0.00 (0.00)
+[94/95]	0.0029 (0.0083)	0.0001 (0.0053)	0.018 (0.168)	100.00 (94.37)
+ * Train Acc 94.367
+ * Val Acc 98.237, Total time 0.28
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/95]	0.1181 (0.1181)	0.1102 (0.1102)	0.057 (0.057)	97.66 (97.66)
+[94/95]	0.0029 (0.0085)	0.0001 (0.0054)	0.029 (0.038)	98.25 (98.78)
+ * Train Acc 98.784
+ * Val Acc 99.167, Total time 0.25
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 0.000, Total time 0.28
+validation split name: 2
+ * Val Acc 99.167, Total time 0.26
+====================== 3 =======================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+#reg_term: 1
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/88]	0.1100 (0.1100)	0.1008 (0.1008)	11.382 (11.382)	0.00 (0.00)
+[87/88]	0.0051 (0.0084)	0.0022 (0.0053)	0.086 (0.490)	98.43 (91.72)
+ * Train Acc 91.716
+ * Val Acc 99.466, Total time 0.24
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/88]	0.1064 (0.1064)	0.0999 (0.0999)	0.086 (0.086)	99.22 (99.22)
+[87/88]	0.0156 (0.0084)	0.0129 (0.0056)	0.036 (0.057)	100.00 (99.51)
+ * Train Acc 99.512
+ * Val Acc 99.733, Total time 0.25
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 0.000, Total time 0.27
+validation split name: 3
+ * Val Acc 99.733, Total time 0.23
+====================== 4 =======================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+#reg_term: 1
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/96]	0.1050 (0.1050)	0.0981 (0.0981)	20.294 (20.294)	0.00 (0.00)
+[95/96]	0.0029 (0.0084)	0.0001 (0.0054)	0.122 (0.908)	100.00 (91.25)
+ * Train Acc 91.250
+ * Val Acc 99.597, Total time 0.24
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/96]	0.1091 (0.1091)	0.1015 (0.1015)	0.123 (0.123)	100.00 (100.00)
+[95/96]	0.0029 (0.0084)	0.0001 (0.0054)	0.057 (0.087)	100.00 (99.83)
+ * Train Acc 99.828
+ * Val Acc 99.899, Total time 0.24
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 0.000, Total time 0.24
+validation split name: 2
+ * Val Acc 0.000, Total time 0.25
+validation split name: 3
+ * Val Acc 0.000, Total time 0.23
+validation split name: 4
+ * Val Acc 99.899, Total time 0.29
+====================== 5 =======================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+#reg_term: 1
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/93]	0.1103 (0.1103)	0.1026 (0.1026)	24.576 (24.576)	0.00 (0.00)
+[92/93]	0.0029 (0.0084)	0.0001 (0.0053)	0.075 (1.073)	100.00 (88.08)
+ * Train Acc 88.085
+ * Val Acc 98.084, Total time 0.24
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/93]	0.1118 (0.1118)	0.1049 (0.1049)	0.095 (0.095)	99.22 (99.22)
+[92/93]	0.0028 (0.0085)	0.0001 (0.0055)	0.093 (0.092)	95.83 (98.65)
+ * Train Acc 98.653
+ * Val Acc 98.487, Total time 0.24
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 0.000, Total time 0.28
+validation split name: 2
+ * Val Acc 0.000, Total time 0.24
+validation split name: 3
+ * Val Acc 0.000, Total time 0.23
+validation split name: 4
+ * Val Acc 0.000, Total time 0.25
+validation split name: 5
+ * Val Acc 98.487, Total time 0.25
+OrderedDict([('1', OrderedDict([('1', 99.81087470449172), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 99.16748285994123), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 99.73319103521878), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 99.8992950654582), ('5', 0.0)])), ('5', OrderedDict([('5', 98.48714069591529)]))])
+Task 1 average acc: 99.81087470449172
+Task 2 average acc: 49.583741429970615
+Task 3 average acc: 33.24439701173959
+Task 4 average acc: 24.97482376636455
+Task 5 average acc: 19.697428139183057
+===Summary of experiment repeats: 1 / 5 ===
+The regularization coefficient: 100.0
+The last avg acc of all repeats: [19.69742814  0.          0.          0.          0.        ]
+mean: 3.9394856278366115 std: 7.878971255673222
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP(
+  (linear): Sequential(
+    (0): Linear(in_features=1024, out_features=400, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Linear(in_features=400, out_features=400, bias=True)
+    (3): ReLU(inplace=True)
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=400, out_features=10, bias=True)
+  )
+)
+#parameter of model: 574410
+Task order: ['1', '2', '3', '4', '5']
+====================== 1 =======================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+#reg_term: 0
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/99]	0.1064 (0.1064)	0.1011 (0.1011)	0.729 (0.729)	0.78 (0.78)
+[98/99]	0.0019 (0.0081)	0.0001 (0.0062)	0.000 (0.023)	100.00 (98.37)
+ * Train Acc 98.373
+ * Val Acc 99.905, Total time 0.30
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/99]	0.1096 (0.1096)	0.1038 (0.1038)	0.001 (0.001)	100.00 (100.00)
+[98/99]	0.0020 (0.0082)	0.0001 (0.0061)	0.000 (0.003)	100.00 (99.83)
+ * Train Acc 99.826
+ * Val Acc 99.858, Total time 0.26
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 99.858, Total time 0.28
+====================== 2 =======================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+#reg_term: 1
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/95]	0.1095 (0.1095)	0.1011 (0.1011)	3.999 (3.999)	0.00 (0.00)
+[94/95]	0.0029 (0.0082)	0.0001 (0.0053)	0.097 (0.177)	98.25 (94.47)
+ * Train Acc 94.474
+ * Val Acc 98.384, Total time 0.25
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/95]	0.1089 (0.1089)	0.1017 (0.1017)	0.041 (0.041)	98.44 (98.44)
+[94/95]	0.0029 (0.0083)	0.0001 (0.0054)	0.055 (0.046)	98.25 (98.47)
+ * Train Acc 98.470
+ * Val Acc 98.384, Total time 0.26
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 98.384, Total time 0.27
+====================== 3 =======================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+#reg_term: 1
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/88]	0.1084 (0.1084)	0.1020 (0.1020)	14.712 (14.712)	0.00 (0.00)
+[87/88]	0.0163 (0.0087)	0.0134 (0.0056)	0.224 (0.646)	96.85 (92.03)
+ * Train Acc 92.027
+ * Val Acc 99.680, Total time 0.23
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/88]	0.1136 (0.1136)	0.1065 (0.1065)	0.144 (0.144)	98.44 (98.44)
+[87/88]	0.0153 (0.0086)	0.0122 (0.0057)	0.057 (0.086)	100.00 (99.48)
+ * Train Acc 99.476
+ * Val Acc 99.787, Total time 0.23
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 0.000, Total time 0.29
+validation split name: 3
+ * Val Acc 99.787, Total time 0.23
+====================== 4 =======================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+#reg_term: 1
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/96]	0.1074 (0.1074)	0.1002 (0.1002)	15.077 (15.077)	0.00 (0.00)
+[95/96]	0.0028 (0.0086)	0.0001 (0.0056)	0.128 (0.756)	100.00 (91.41)
+ * Train Acc 91.414
+ * Val Acc 99.043, Total time 0.25
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/96]	0.1101 (0.1101)	0.1028 (0.1028)	0.128 (0.128)	100.00 (100.00)
+[95/96]	0.0028 (0.0085)	0.0001 (0.0054)	0.057 (0.090)	100.00 (99.82)
+ * Train Acc 99.819
+ * Val Acc 99.597, Total time 0.24
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 0.000, Total time 0.24
+validation split name: 2
+ * Val Acc 0.000, Total time 0.25
+validation split name: 3
+ * Val Acc 0.000, Total time 0.23
+validation split name: 4
+ * Val Acc 99.597, Total time 0.27
+====================== 5 =======================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+#reg_term: 1
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/93]	0.1113 (0.1113)	0.1046 (0.1046)	31.084 (31.084)	0.00 (0.00)
+[92/93]	0.0028 (0.0086)	0.0001 (0.0057)	0.206 (1.374)	100.00 (86.42)
+ * Train Acc 86.415
+ * Val Acc 97.680, Total time 0.25
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/93]	0.1093 (0.1093)	0.1029 (0.1029)	0.208 (0.208)	100.00 (100.00)
+[92/93]	0.0027 (0.0082)	0.0001 (0.0055)	0.128 (0.199)	100.00 (98.48)
+ * Train Acc 98.483
+ * Val Acc 98.386, Total time 0.24
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 0.000, Total time 0.24
+validation split name: 3
+ * Val Acc 0.000, Total time 0.27
+validation split name: 4
+ * Val Acc 0.000, Total time 0.24
+validation split name: 5
+ * Val Acc 98.386, Total time 0.24
+OrderedDict([('1', OrderedDict([('1', 99.8581560283688), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 98.38393731635651), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 99.78655282817503), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 99.59718026183283), ('5', 0.0)])), ('5', OrderedDict([('5', 98.3862834089763)]))])
+Task 1 average acc: 99.8581560283688
+Task 2 average acc: 49.191968658178254
+Task 3 average acc: 33.26218427605834
+Task 4 average acc: 24.899295065458208
+Task 5 average acc: 19.67725668179526
+===Summary of experiment repeats: 2 / 5 ===
+The regularization coefficient: 100.0
+The last avg acc of all repeats: [19.69742814 19.67725668  0.          0.          0.        ]
+mean: 7.874936964195664 std: 9.644790768795978
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP(
+  (linear): Sequential(
+    (0): Linear(in_features=1024, out_features=400, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Linear(in_features=400, out_features=400, bias=True)
+    (3): ReLU(inplace=True)
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=400, out_features=10, bias=True)
+  )
+)
+#parameter of model: 574410
+Task order: ['1', '2', '3', '4', '5']
+====================== 1 =======================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+#reg_term: 0
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/99]	0.1041 (0.1041)	0.0967 (0.0967)	0.708 (0.708)	7.81 (7.81)
+[98/99]	0.0073 (0.0082)	0.0054 (0.0061)	0.037 (0.023)	99.17 (98.61)
+ * Train Acc 98.610
+ * Val Acc 99.811, Total time 0.25
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/99]	0.1085 (0.1085)	0.1024 (0.1024)	0.000 (0.000)	100.00 (100.00)
+[98/99]	0.0023 (0.0083)	0.0001 (0.0062)	0.000 (0.003)	100.00 (99.79)
+ * Train Acc 99.795
+ * Val Acc 99.811, Total time 0.25
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 99.811, Total time 0.25
+====================== 2 =======================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+#reg_term: 1
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/95]	0.1132 (0.1132)	0.1046 (0.1046)	3.199 (3.199)	0.78 (0.78)
+[94/95]	0.0029 (0.0085)	0.0001 (0.0055)	0.009 (0.150)	100.00 (94.66)
+ * Train Acc 94.656
+ * Val Acc 99.167, Total time 0.25
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/95]	0.1089 (0.1089)	0.1015 (0.1015)	0.053 (0.053)	96.88 (96.88)
+[94/95]	0.0029 (0.0083)	0.0001 (0.0054)	0.033 (0.040)	98.25 (98.64)
+ * Train Acc 98.643
+ * Val Acc 98.874, Total time 0.24
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 98.874, Total time 0.25
+====================== 3 =======================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+#reg_term: 1
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/88]	0.1071 (0.1071)	0.0998 (0.0998)	15.935 (15.935)	0.00 (0.00)
+[87/88]	0.0070 (0.0085)	0.0040 (0.0055)	0.109 (0.655)	99.21 (92.50)
+ * Train Acc 92.498
+ * Val Acc 99.520, Total time 0.23
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/88]	0.1092 (0.1092)	0.1018 (0.1018)	0.108 (0.108)	100.00 (100.00)
+[87/88]	0.0159 (0.0086)	0.0130 (0.0057)	0.065 (0.088)	100.00 (99.49)
+ * Train Acc 99.485
+ * Val Acc 99.680, Total time 0.23
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 0.000, Total time 0.28
+validation split name: 3
+ * Val Acc 99.680, Total time 0.24
+====================== 4 =======================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+#reg_term: 1
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/96]	0.1134 (0.1134)	0.1060 (0.1060)	17.027 (17.027)	0.00 (0.00)
+[95/96]	0.0028 (0.0083)	0.0001 (0.0053)	0.132 (0.831)	100.00 (92.86)
+ * Train Acc 92.859
+ * Val Acc 99.446, Total time 0.25
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/96]	0.1085 (0.1085)	0.1016 (0.1016)	0.133 (0.133)	100.00 (100.00)
+[95/96]	0.0029 (0.0086)	0.0001 (0.0056)	0.055 (0.088)	100.00 (99.85)
+ * Train Acc 99.852
+ * Val Acc 99.648, Total time 0.27
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 0.000, Total time 0.26
+validation split name: 2
+ * Val Acc 0.000, Total time 0.25
+validation split name: 3
+ * Val Acc 0.000, Total time 0.27
+validation split name: 4
+ * Val Acc 99.648, Total time 0.24
+====================== 5 =======================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+#reg_term: 1
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/93]	0.1087 (0.1087)	0.1015 (0.1015)	14.503 (14.503)	0.00 (0.00)
+[92/93]	0.0029 (0.0083)	0.0001 (0.0053)	0.115 (0.722)	100.00 (88.47)
+ * Train Acc 88.475
+ * Val Acc 98.386, Total time 0.24
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/93]	0.1060 (0.1060)	0.0989 (0.0989)	0.211 (0.211)	98.44 (98.44)
+[92/93]	0.0029 (0.0083)	0.0001 (0.0054)	0.096 (0.126)	100.00 (98.68)
+ * Train Acc 98.678
+ * Val Acc 98.840, Total time 0.29
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 0.000, Total time 0.24
+validation split name: 3
+ * Val Acc 0.000, Total time 0.24
+validation split name: 4
+ * Val Acc 0.000, Total time 0.27
+validation split name: 5
+ * Val Acc 98.840, Total time 0.24
+OrderedDict([('1', OrderedDict([('1', 99.81087470449172), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 98.87365328109696), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 99.67982924226254), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 99.64753272910373), ('5', 0.0)])), ('5', OrderedDict([('5', 98.84014120020171)]))])
+Task 1 average acc: 99.81087470449172
+Task 2 average acc: 49.43682664054848
+Task 3 average acc: 33.226609747420845
+Task 4 average acc: 24.911883182275933
+Task 5 average acc: 19.768028240040344
+===Summary of experiment repeats: 3 / 5 ===
+The regularization coefficient: 100.0
+The last avg acc of all repeats: [19.69742814 19.67725668 19.76802824  0.          0.        ]
+mean: 11.828542612203732 std: 9.658011645002006
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP(
+  (linear): Sequential(
+    (0): Linear(in_features=1024, out_features=400, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Linear(in_features=400, out_features=400, bias=True)
+    (3): ReLU(inplace=True)
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=400, out_features=10, bias=True)
+  )
+)
+#parameter of model: 574410
+Task order: ['1', '2', '3', '4', '5']
+====================== 1 =======================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+#reg_term: 0
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/99]	0.1059 (0.1059)	0.1006 (0.1006)	0.702 (0.702)	4.69 (4.69)
+[98/99]	0.0020 (0.0089)	0.0001 (0.0062)	0.000 (0.022)	100.00 (98.72)
+ * Train Acc 98.721
+ * Val Acc 99.858, Total time 0.28
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/99]	0.1062 (0.1062)	0.1004 (0.1004)	0.000 (0.000)	100.00 (100.00)
+[98/99]	0.0020 (0.0083)	0.0001 (0.0062)	0.000 (0.003)	100.00 (99.87)
+ * Train Acc 99.866
+ * Val Acc 99.905, Total time 0.29
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 99.905, Total time 0.29
+====================== 2 =======================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+#reg_term: 1
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/95]	0.1078 (0.1078)	0.1004 (0.1004)	3.038 (3.038)	4.69 (4.69)
+[94/95]	0.0028 (0.0085)	0.0001 (0.0055)	0.070 (0.184)	98.25 (93.85)
+ * Train Acc 93.854
+ * Val Acc 98.531, Total time 0.25
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/95]	0.1136 (0.1136)	0.1076 (0.1076)	0.029 (0.029)	100.00 (100.00)
+[94/95]	0.0027 (0.0083)	0.0001 (0.0055)	0.013 (0.047)	100.00 (98.54)
+ * Train Acc 98.536
+ * Val Acc 99.021, Total time 0.28
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 99.021, Total time 0.25
+====================== 3 =======================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+#reg_term: 1
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/88]	0.1031 (0.1031)	0.0967 (0.0967)	10.108 (10.108)	0.00 (0.00)
+[87/88]	0.0162 (0.0085)	0.0133 (0.0056)	0.106 (0.426)	96.85 (92.46)
+ * Train Acc 92.462
+ * Val Acc 98.933, Total time 0.23
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/88]	0.1074 (0.1074)	0.1009 (0.1009)	0.073 (0.073)	99.22 (99.22)
+[87/88]	0.0148 (0.0084)	0.0120 (0.0054)	0.036 (0.058)	100.00 (99.49)
+ * Train Acc 99.494
+ * Val Acc 99.893, Total time 0.23
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 0.000, Total time 0.25
+validation split name: 3
+ * Val Acc 99.893, Total time 0.23
+====================== 4 =======================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+#reg_term: 1
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/96]	0.1108 (0.1108)	0.1031 (0.1031)	16.420 (16.420)	0.00 (0.00)
+[95/96]	0.0028 (0.0086)	0.0001 (0.0056)	0.116 (0.715)	100.00 (91.03)
+ * Train Acc 91.028
+ * Val Acc 99.446, Total time 0.24
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/96]	0.1058 (0.1058)	0.0992 (0.0992)	0.115 (0.115)	100.00 (100.00)
+[95/96]	0.0029 (0.0083)	0.0001 (0.0053)	0.056 (0.083)	100.00 (99.89)
+ * Train Acc 99.885
+ * Val Acc 99.245, Total time 0.25
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 0.000, Total time 0.25
+validation split name: 3
+ * Val Acc 0.000, Total time 0.24
+validation split name: 4
+ * Val Acc 99.245, Total time 0.25
+====================== 5 =======================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+#reg_term: 1
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/93]	0.1079 (0.1079)	0.1018 (0.1018)	18.278 (18.278)	0.00 (0.00)
+[92/93]	0.0034 (0.0086)	0.0006 (0.0053)	0.305 (0.988)	91.67 (88.41)
+ * Train Acc 88.407
+ * Val Acc 98.134, Total time 0.25
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/93]	0.1073 (0.1073)	0.1012 (0.1012)	0.233 (0.233)	98.44 (98.44)
+[92/93]	0.0028 (0.0083)	0.0001 (0.0054)	0.102 (0.178)	100.00 (98.18)
+ * Train Acc 98.178
+ * Val Acc 98.134, Total time 0.24
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 0.000, Total time 0.25
+validation split name: 3
+ * Val Acc 0.000, Total time 0.24
+validation split name: 4
+ * Val Acc 0.000, Total time 0.24
+validation split name: 5
+ * Val Acc 98.134, Total time 0.24
+OrderedDict([('1', OrderedDict([('1', 99.90543735224587), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 99.0205680705191), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 99.89327641408751), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 99.24471299093656), ('5', 0.0)])), ('5', OrderedDict([('5', 98.13414019162884)]))])
+Task 1 average acc: 99.90543735224587
+Task 2 average acc: 49.51028403525955
+Task 3 average acc: 33.29775880469584
+Task 4 average acc: 24.81117824773414
+Task 5 average acc: 19.62682803832577
+===Summary of experiment repeats: 4 / 5 ===
+The regularization coefficient: 100.0
+The last avg acc of all repeats: [19.69742814 19.67725668 19.76802824 19.62682804  0.        ]
+mean: 15.753908219868885 std: 7.8770845388927695
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP(
+  (linear): Sequential(
+    (0): Linear(in_features=1024, out_features=400, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Linear(in_features=400, out_features=400, bias=True)
+    (3): ReLU(inplace=True)
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=400, out_features=10, bias=True)
+  )
+)
+#parameter of model: 574410
+Task order: ['1', '2', '3', '4', '5']
+====================== 1 =======================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+#reg_term: 0
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/99]	0.1056 (0.1056)	0.0998 (0.0998)	0.723 (0.723)	9.38 (9.38)
+[98/99]	0.0025 (0.0082)	0.0005 (0.0061)	0.000 (0.022)	100.00 (98.48)
+ * Train Acc 98.476
+ * Val Acc 99.764, Total time 0.25
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/99]	0.1082 (0.1082)	0.1022 (0.1022)	0.002 (0.002)	99.22 (99.22)
+[98/99]	0.0020 (0.0084)	0.0001 (0.0062)	0.000 (0.003)	100.00 (99.77)
+ * Train Acc 99.771
+ * Val Acc 99.811, Total time 0.25
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 99.811, Total time 0.25
+====================== 2 =======================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+#reg_term: 1
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/95]	0.1044 (0.1044)	0.0979 (0.0979)	2.850 (2.850)	21.09 (21.09)
+[94/95]	0.0028 (0.0085)	0.0001 (0.0056)	0.070 (0.143)	96.49 (95.01)
+ * Train Acc 95.012
+ * Val Acc 98.433, Total time 0.26
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/95]	0.1073 (0.1073)	0.1007 (0.1007)	0.023 (0.023)	99.22 (99.22)
+[94/95]	0.0039 (0.0088)	0.0010 (0.0051)	0.005 (0.041)	100.00 (98.63)
+ * Train Acc 98.627
+ * Val Acc 99.314, Total time 0.25
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 0.000, Total time 0.26
+validation split name: 2
+ * Val Acc 99.314, Total time 0.25
+====================== 3 =======================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+#reg_term: 1
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/88]	0.1102 (0.1102)	0.1029 (0.1029)	12.107 (12.107)	0.00 (0.00)
+[87/88]	0.0032 (0.0085)	0.0003 (0.0052)	0.066 (0.480)	100.00 (91.46)
+ * Train Acc 91.459
+ * Val Acc 99.626, Total time 0.23
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/88]	0.1093 (0.1093)	0.1017 (0.1017)	0.059 (0.059)	100.00 (100.00)
+[87/88]	0.0139 (0.0086)	0.0109 (0.0054)	0.040 (0.057)	100.00 (99.55)
+ * Train Acc 99.547
+ * Val Acc 99.520, Total time 0.23
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 0.000, Total time 0.25
+validation split name: 3
+ * Val Acc 99.520, Total time 0.23
+====================== 4 =======================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+#reg_term: 1
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/96]	0.1089 (0.1089)	0.1022 (0.1022)	15.331 (15.331)	0.00 (0.00)
+[95/96]	0.0028 (0.0083)	0.0001 (0.0053)	0.169 (0.682)	95.65 (93.06)
+ * Train Acc 93.064
+ * Val Acc 99.648, Total time 0.24
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/96]	0.1121 (0.1121)	0.1057 (0.1057)	0.115 (0.115)	100.00 (100.00)
+[95/96]	0.0029 (0.0085)	0.0001 (0.0055)	0.052 (0.082)	100.00 (99.82)
+ * Train Acc 99.819
+ * Val Acc 99.446, Total time 0.25
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 0.000, Total time 0.25
+validation split name: 3
+ * Val Acc 0.000, Total time 0.23
+validation split name: 4
+ * Val Acc 99.446, Total time 0.24
+====================== 5 =======================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+#reg_term: 1
+Epoch:0
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/93]	0.1057 (0.1057)	0.0997 (0.0997)	22.934 (22.934)	0.00 (0.00)
+[92/93]	0.0027 (0.0084)	0.0001 (0.0056)	0.198 (1.084)	100.00 (88.35)
+ * Train Acc 88.347
+ * Val Acc 97.832, Total time 0.24
+Epoch:1
+LR: 0.001
+Itr		Time		  Data		  Loss		Acc
+[0/93]	0.1099 (0.1099)	0.1029 (0.1029)	0.267 (0.267)	97.66 (97.66)
+[92/93]	0.0029 (0.0084)	0.0001 (0.0054)	0.276 (0.182)	95.83 (98.14)
+ * Train Acc 98.144
+ * Val Acc 98.185, Total time 0.27
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+ * Val Acc 0.000, Total time 0.26
+validation split name: 2
+ * Val Acc 0.000, Total time 0.25
+validation split name: 3
+ * Val Acc 0.000, Total time 0.23
+validation split name: 4
+ * Val Acc 0.000, Total time 0.24
+validation split name: 5
+ * Val Acc 98.185, Total time 0.24
+OrderedDict([('1', OrderedDict([('1', 99.81087470449172), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 99.31439764936337), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 99.51974386339381), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 99.44612286002014), ('5', 0.0)])), ('5', OrderedDict([('5', 98.18456883509833)]))])
+Task 1 average acc: 99.81087470449172
+Task 2 average acc: 49.657198824681686
+Task 3 average acc: 33.17324795446461
+Task 4 average acc: 24.861530715005035
+Task 5 average acc: 19.636913767019667
+===Summary of experiment repeats: 5 / 5 ===
+The regularization coefficient: 100.0
+The last avg acc of all repeats: [19.69742814 19.67725668 19.76802824 19.62682804 19.63691377]
+mean: 19.681290973272816 std: 0.050468970259997685
+reg_coef: 100.0 mean: 19.681290973272816 std: 0.050468970259997685
+Total Time for the script is 651.7550394535065 seconds

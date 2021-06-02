@@ -1,0 +1,702 @@
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP(
+  (linear): Sequential(
+    (0): Linear(in_features=1024, out_features=400, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Linear(in_features=400, out_features=400, bias=True)
+    (3): ReLU(inplace=True)
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=400, out_features=10, bias=True)
+  )
+)
+#parameter of model: 574410
+Task order: ['1', '2', '3', '4', '5']
+====================== 1 =======================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/99]	0.5221 (0.5221)	0.0891 (0.0891)	0.684 (0.684)	0.00 (0.00)
+[98/99]	0.0017 (0.0122)	0.0001 (0.0060)	0.001 (0.232)	50.41 (94.79)
+ * Train Acc 94.789
+ * Val Acc 53.050, Total time 0.27
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/99]	0.1085 (0.1085)	0.1034 (0.1034)	0.001 (0.001)	53.91 (53.91)
+[98/99]	0.0017 (0.0082)	0.0001 (0.0065)	0.008 (0.003)	99.17 (91.76)
+ * Train Acc 91.765
+ * Val Acc 65.721, Total time 0.26
+validation split name: 1
+ * Val Acc 65.721, Total time 0.26
+====================== 2 =======================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/95]	0.1065 (0.1065)	0.1017 (0.1017)	3.228 (3.228)	0.00 (0.00)
+[94/95]	0.0018 (0.0085)	0.0001 (0.0068)	0.016 (0.188)	100.00 (93.04)
+ * Train Acc 93.043
+ * Val Acc 98.531, Total time 0.29
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/95]	0.1071 (0.1071)	0.1008 (0.1008)	0.030 (0.030)	99.22 (99.22)
+[94/95]	0.0033 (0.0084)	0.0014 (0.0065)	0.041 (0.041)	98.25 (98.54)
+ * Train Acc 98.544
+ * Val Acc 99.119, Total time 0.25
+validation split name: 1
+ * Val Acc 0.000, Total time 0.24
+validation split name: 2
+ * Val Acc 99.119, Total time 0.25
+====================== 3 =======================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/88]	0.1050 (0.1050)	0.1000 (0.1000)	5.470 (5.470)	0.00 (0.00)
+[87/88]	0.0158 (0.0084)	0.0138 (0.0064)	0.012 (0.162)	99.21 (95.21)
+ * Train Acc 95.206
+ * Val Acc 99.733, Total time 0.24
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/88]	0.1074 (0.1074)	0.1016 (0.1016)	0.018 (0.018)	99.22 (99.22)
+[87/88]	0.0182 (0.0087)	0.0163 (0.0068)	0.006 (0.012)	100.00 (99.68)
+ * Train Acc 99.680
+ * Val Acc 99.893, Total time 0.24
+validation split name: 1
+ * Val Acc 0.000, Total time 0.26
+validation split name: 2
+ * Val Acc 0.000, Total time 0.25
+validation split name: 3
+ * Val Acc 99.893, Total time 0.22
+====================== 4 =======================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/96]	0.1056 (0.1056)	0.1006 (0.1006)	6.676 (6.676)	0.00 (0.00)
+[95/96]	0.0018 (0.0084)	0.0001 (0.0064)	0.067 (0.126)	95.65 (97.04)
+ * Train Acc 97.037
+ * Val Acc 97.281, Total time 0.24
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/96]	0.1101 (0.1101)	0.1033 (0.1033)	0.045 (0.045)	98.44 (98.44)
+[95/96]	0.0023 (0.0082)	0.0005 (0.0063)	0.000 (0.004)	100.00 (99.89)
+ * Train Acc 99.893
+ * Val Acc 99.748, Total time 0.25
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 0.000, Total time 0.25
+validation split name: 3
+ * Val Acc 0.000, Total time 0.23
+validation split name: 4
+ * Val Acc 99.748, Total time 0.24
+====================== 5 =======================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/93]	0.1078 (0.1078)	0.1023 (0.1023)	8.069 (8.069)	0.00 (0.00)
+[92/93]	0.0016 (0.0083)	0.0001 (0.0066)	0.003 (0.220)	100.00 (94.58)
+ * Train Acc 94.585
+ * Val Acc 98.487, Total time 0.24
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/93]	0.1093 (0.1093)	0.1029 (0.1029)	0.024 (0.024)	99.22 (99.22)
+[92/93]	0.0016 (0.0086)	0.0001 (0.0067)	0.045 (0.031)	95.83 (98.87)
+ * Train Acc 98.873
+ * Val Acc 97.327, Total time 0.26
+validation split name: 1
+ * Val Acc 0.000, Total time 0.26
+validation split name: 2
+ * Val Acc 0.000, Total time 0.25
+validation split name: 3
+ * Val Acc 0.000, Total time 0.24
+validation split name: 4
+ * Val Acc 0.000, Total time 0.25
+validation split name: 5
+ * Val Acc 97.327, Total time 0.25
+OrderedDict([('1', OrderedDict([('1', 65.72104018912529), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 99.11851126346718), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 99.89327641408751), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 99.74823766364553), ('5', 0.0)])), ('5', OrderedDict([('5', 97.327281896117)]))])
+Task 1 average acc: 65.72104018912529
+Task 2 average acc: 49.55925563173359
+Task 3 average acc: 33.29775880469584
+Task 4 average acc: 24.93705941591138
+Task 5 average acc: 19.4654563792234
+===Summary of experiment repeats: 1 / 5 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [19.46545638  0.          0.          0.          0.        ]
+mean: 3.89309127584468 std: 7.786182551689359
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP(
+  (linear): Sequential(
+    (0): Linear(in_features=1024, out_features=400, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Linear(in_features=400, out_features=400, bias=True)
+    (3): ReLU(inplace=True)
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=400, out_features=10, bias=True)
+  )
+)
+#parameter of model: 574410
+Task order: ['1', '2', '3', '4', '5']
+====================== 1 =======================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/99]	0.1079 (0.1079)	0.1031 (0.1031)	0.700 (0.700)	21.09 (21.09)
+[98/99]	0.0017 (0.0086)	0.0001 (0.0068)	0.019 (0.261)	99.17 (98.15)
+ * Train Acc 98.152
+ * Val Acc 99.858, Total time 0.29
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/99]	0.1107 (0.1107)	0.1055 (0.1055)	0.003 (0.003)	99.22 (99.22)
+[98/99]	0.0027 (0.0082)	0.0008 (0.0064)	0.002 (0.004)	100.00 (99.79)
+ * Train Acc 99.787
+ * Val Acc 99.905, Total time 0.26
+validation split name: 1
+ * Val Acc 99.905, Total time 0.26
+====================== 2 =======================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/95]	0.1118 (0.1118)	0.1067 (0.1067)	2.744 (2.744)	0.00 (0.00)
+[94/95]	0.0017 (0.0085)	0.0001 (0.0066)	0.071 (0.188)	94.74 (93.54)
+ * Train Acc 93.540
+ * Val Acc 98.335, Total time 0.25
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/95]	0.1074 (0.1074)	0.1024 (0.1024)	0.046 (0.046)	98.44 (98.44)
+[94/95]	0.0016 (0.0086)	0.0001 (0.0069)	0.036 (0.045)	98.25 (98.37)
+ * Train Acc 98.370
+ * Val Acc 98.482, Total time 0.25
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 98.482, Total time 0.25
+====================== 3 =======================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/88]	0.1091 (0.1091)	0.1042 (0.1042)	5.285 (5.285)	0.00 (0.00)
+[87/88]	0.0149 (0.0084)	0.0129 (0.0065)	0.036 (0.158)	99.21 (95.50)
+ * Train Acc 95.499
+ * Val Acc 99.680, Total time 0.23
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/88]	0.1195 (0.1195)	0.1143 (0.1143)	0.011 (0.011)	99.22 (99.22)
+[87/88]	0.0176 (0.0086)	0.0161 (0.0069)	0.009 (0.011)	100.00 (99.67)
+ * Train Acc 99.671
+ * Val Acc 99.893, Total time 0.27
+validation split name: 1
+ * Val Acc 0.000, Total time 0.26
+validation split name: 2
+ * Val Acc 0.196, Total time 0.25
+validation split name: 3
+ * Val Acc 99.893, Total time 0.23
+====================== 4 =======================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/96]	0.1092 (0.1092)	0.1041 (0.1041)	7.233 (7.233)	0.00 (0.00)
+[95/96]	0.0016 (0.0083)	0.0001 (0.0064)	0.012 (0.146)	100.00 (96.59)
+ * Train Acc 96.585
+ * Val Acc 99.547, Total time 0.24
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/96]	0.1070 (0.1070)	0.1011 (0.1011)	0.001 (0.001)	100.00 (100.00)
+[95/96]	0.0016 (0.0082)	0.0001 (0.0063)	0.000 (0.003)	100.00 (99.91)
+ * Train Acc 99.910
+ * Val Acc 99.748, Total time 0.24
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 0.000, Total time 0.25
+validation split name: 3
+ * Val Acc 0.000, Total time 0.23
+validation split name: 4
+ * Val Acc 99.748, Total time 0.24
+====================== 5 =======================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/93]	0.1109 (0.1109)	0.1051 (0.1051)	7.677 (7.677)	0.00 (0.00)
+[92/93]	0.0016 (0.0083)	0.0001 (0.0065)	0.045 (0.220)	100.00 (94.64)
+ * Train Acc 94.644
+ * Val Acc 98.538, Total time 0.24
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/93]	0.1101 (0.1101)	0.1052 (0.1052)	0.015 (0.015)	100.00 (100.00)
+[92/93]	0.0016 (0.0084)	0.0001 (0.0065)	0.045 (0.031)	95.83 (98.97)
+ * Train Acc 98.966
+ * Val Acc 97.731, Total time 0.23
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 0.000, Total time 0.25
+validation split name: 3
+ * Val Acc 0.000, Total time 0.23
+validation split name: 4
+ * Val Acc 0.000, Total time 0.24
+validation split name: 5
+ * Val Acc 97.731, Total time 0.24
+OrderedDict([('1', OrderedDict([('1', 99.90543735224587), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 98.4818805093046), ('3', 0.1958863858961802), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 99.89327641408751), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 99.74823766364553), ('5', 0.0)])), ('5', OrderedDict([('5', 97.73071104387292)]))])
+Task 1 average acc: 99.90543735224587
+Task 2 average acc: 49.2409402546523
+Task 3 average acc: 33.36305426666123
+Task 4 average acc: 24.93705941591138
+Task 5 average acc: 19.546142208774583
+===Summary of experiment repeats: 2 / 5 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [19.46545638 19.54614221  0.          0.          0.        ]
+mean: 7.802319717599596 std: 9.555885122989613
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP(
+  (linear): Sequential(
+    (0): Linear(in_features=1024, out_features=400, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Linear(in_features=400, out_features=400, bias=True)
+    (3): ReLU(inplace=True)
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=400, out_features=10, bias=True)
+  )
+)
+#parameter of model: 574410
+Task order: ['1', '2', '3', '4', '5']
+====================== 1 =======================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/99]	0.1166 (0.1166)	0.1079 (0.1079)	0.687 (0.687)	5.47 (5.47)
+[98/99]	0.0019 (0.0085)	0.0001 (0.0067)	0.000 (0.295)	100.00 (98.14)
+ * Train Acc 98.137
+ * Val Acc 99.953, Total time 0.26
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/99]	0.1117 (0.1117)	0.1064 (0.1064)	0.002 (0.002)	100.00 (100.00)
+[98/99]	0.0017 (0.0084)	0.0001 (0.0065)	0.011 (0.002)	99.17 (99.91)
+ * Train Acc 99.913
+ * Val Acc 99.858, Total time 0.26
+validation split name: 1
+ * Val Acc 99.858, Total time 0.27
+====================== 2 =======================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/95]	0.1074 (0.1074)	0.1022 (0.1022)	5.329 (5.329)	0.00 (0.00)
+[94/95]	0.0017 (0.0086)	0.0001 (0.0069)	0.014 (0.217)	100.00 (93.82)
+ * Train Acc 93.821
+ * Val Acc 98.727, Total time 0.25
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/95]	0.1111 (0.1111)	0.1062 (0.1062)	0.046 (0.046)	97.66 (97.66)
+[94/95]	0.0017 (0.0083)	0.0002 (0.0064)	0.072 (0.043)	94.74 (98.58)
+ * Train Acc 98.577
+ * Val Acc 95.397, Total time 0.27
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 95.397, Total time 0.25
+====================== 3 =======================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/88]	0.1091 (0.1091)	0.1033 (0.1033)	6.572 (6.572)	0.00 (0.00)
+[87/88]	0.0086 (0.0086)	0.0065 (0.0067)	0.017 (0.169)	99.21 (96.03)
+ * Train Acc 96.031
+ * Val Acc 99.733, Total time 0.23
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/88]	0.1111 (0.1111)	0.1062 (0.1062)	0.003 (0.003)	100.00 (100.00)
+[87/88]	0.0182 (0.0085)	0.0163 (0.0067)	0.006 (0.014)	100.00 (99.56)
+ * Train Acc 99.556
+ * Val Acc 99.840, Total time 0.24
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 0.000, Total time 0.25
+validation split name: 3
+ * Val Acc 99.840, Total time 0.23
+====================== 4 =======================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/96]	0.1099 (0.1099)	0.1045 (0.1045)	7.994 (7.994)	0.00 (0.00)
+[95/96]	0.0023 (0.0084)	0.0005 (0.0064)	0.000 (0.140)	100.00 (96.98)
+ * Train Acc 96.979
+ * Val Acc 99.799, Total time 0.28
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/96]	0.1087 (0.1087)	0.1024 (0.1024)	0.002 (0.002)	100.00 (100.00)
+[95/96]	0.0016 (0.0083)	0.0001 (0.0066)	0.001 (0.004)	100.00 (99.89)
+ * Train Acc 99.885
+ * Val Acc 99.849, Total time 0.24
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 0.000, Total time 0.25
+validation split name: 3
+ * Val Acc 0.000, Total time 0.23
+validation split name: 4
+ * Val Acc 99.849, Total time 0.28
+====================== 5 =======================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/93]	0.1105 (0.1105)	0.1054 (0.1054)	9.152 (9.152)	0.00 (0.00)
+[92/93]	0.0016 (0.0087)	0.0001 (0.0069)	0.021 (0.223)	100.00 (95.33)
+ * Train Acc 95.331
+ * Val Acc 98.033, Total time 0.28
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/93]	0.1107 (0.1107)	0.1051 (0.1051)	0.050 (0.050)	96.88 (96.88)
+[92/93]	0.0016 (0.0084)	0.0001 (0.0065)	0.062 (0.032)	95.83 (98.92)
+ * Train Acc 98.915
+ * Val Acc 96.924, Total time 0.24
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 0.000, Total time 0.25
+validation split name: 3
+ * Val Acc 0.000, Total time 0.24
+validation split name: 4
+ * Val Acc 0.000, Total time 0.28
+validation split name: 5
+ * Val Acc 96.924, Total time 0.25
+OrderedDict([('1', OrderedDict([('1', 99.8581560283688), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 95.39666993143976), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 99.83991462113127), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 99.8489425981873), ('5', 0.0)])), ('5', OrderedDict([('5', 96.92385274836107)]))])
+Task 1 average acc: 99.8581560283688
+Task 2 average acc: 47.69833496571988
+Task 3 average acc: 33.27997154037709
+Task 4 average acc: 24.962235649546827
+Task 5 average acc: 19.384770549672215
+===Summary of experiment repeats: 3 / 5 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [19.46545638 19.54614221 19.38477055  0.          0.        ]
+mean: 11.679273827534038 std: 9.536223685169299
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP(
+  (linear): Sequential(
+    (0): Linear(in_features=1024, out_features=400, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Linear(in_features=400, out_features=400, bias=True)
+    (3): ReLU(inplace=True)
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=400, out_features=10, bias=True)
+  )
+)
+#parameter of model: 574410
+Task order: ['1', '2', '3', '4', '5']
+====================== 1 =======================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/99]	0.1121 (0.1121)	0.1030 (0.1030)	0.693 (0.693)	4.69 (4.69)
+[98/99]	0.0017 (0.0086)	0.0001 (0.0067)	0.001 (0.244)	100.00 (98.14)
+ * Train Acc 98.144
+ * Val Acc 99.716, Total time 0.25
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/99]	0.1083 (0.1083)	0.1031 (0.1031)	0.000 (0.000)	100.00 (100.00)
+[98/99]	0.0018 (0.0082)	0.0001 (0.0063)	0.013 (0.003)	99.17 (99.74)
+ * Train Acc 99.739
+ * Val Acc 99.764, Total time 0.26
+validation split name: 1
+ * Val Acc 99.764, Total time 0.26
+====================== 2 =======================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/95]	0.1130 (0.1130)	0.1073 (0.1073)	2.498 (2.498)	15.62 (15.62)
+[94/95]	0.0017 (0.0085)	0.0001 (0.0067)	0.016 (0.190)	100.00 (93.29)
+ * Train Acc 93.291
+ * Val Acc 98.286, Total time 0.25
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/95]	0.1168 (0.1168)	0.1106 (0.1106)	0.063 (0.063)	96.88 (96.88)
+[94/95]	0.0017 (0.0086)	0.0001 (0.0067)	0.006 (0.044)	100.00 (98.41)
+ * Train Acc 98.412
+ * Val Acc 98.972, Total time 0.30
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 98.972, Total time 0.25
+====================== 3 =======================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/88]	0.1082 (0.1082)	0.1033 (0.1033)	5.779 (5.779)	0.00 (0.00)
+[87/88]	0.0186 (0.0086)	0.0168 (0.0068)	0.004 (0.166)	100.00 (95.15)
+ * Train Acc 95.152
+ * Val Acc 99.733, Total time 0.23
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/88]	0.1133 (0.1133)	0.1080 (0.1080)	0.007 (0.007)	100.00 (100.00)
+[87/88]	0.0018 (0.0086)	0.0001 (0.0067)	0.004 (0.011)	100.00 (99.64)
+ * Train Acc 99.645
+ * Val Acc 99.947, Total time 0.23
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 0.000, Total time 0.29
+validation split name: 3
+ * Val Acc 99.947, Total time 0.24
+====================== 4 =======================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/96]	0.1116 (0.1116)	0.1063 (0.1063)	7.533 (7.533)	0.00 (0.00)
+[95/96]	0.0018 (0.0086)	0.0001 (0.0066)	0.001 (0.135)	100.00 (97.41)
+ * Train Acc 97.414
+ * Val Acc 99.597, Total time 0.26
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/96]	0.1068 (0.1068)	0.1014 (0.1014)	0.018 (0.018)	98.44 (98.44)
+[95/96]	0.0016 (0.0084)	0.0001 (0.0065)	0.000 (0.004)	100.00 (99.88)
+ * Train Acc 99.877
+ * Val Acc 99.748, Total time 0.24
+validation split name: 1
+ * Val Acc 0.000, Total time 0.29
+validation split name: 2
+ * Val Acc 0.000, Total time 0.28
+validation split name: 3
+ * Val Acc 0.000, Total time 0.23
+validation split name: 4
+ * Val Acc 99.748, Total time 0.24
+====================== 5 =======================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/93]	0.1086 (0.1086)	0.1032 (0.1032)	8.147 (8.147)	0.00 (0.00)
+[92/93]	0.0019 (0.0084)	0.0001 (0.0066)	0.006 (0.231)	100.00 (94.84)
+ * Train Acc 94.839
+ * Val Acc 98.840, Total time 0.29
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/93]	0.1087 (0.1087)	0.1030 (0.1030)	0.029 (0.029)	99.22 (99.22)
+[92/93]	0.0016 (0.0084)	0.0001 (0.0066)	0.001 (0.031)	100.00 (98.95)
+ * Train Acc 98.949
+ * Val Acc 99.042, Total time 0.25
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 0.000, Total time 0.26
+validation split name: 3
+ * Val Acc 0.000, Total time 0.24
+validation split name: 4
+ * Val Acc 0.000, Total time 0.24
+validation split name: 5
+ * Val Acc 99.042, Total time 0.25
+OrderedDict([('1', OrderedDict([('1', 99.76359338061465), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 98.97159647404506), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 99.94663820704376), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 99.74823766364553), ('5', 0.0)])), ('5', OrderedDict([('5', 99.04185577407968)]))])
+Task 1 average acc: 99.76359338061465
+Task 2 average acc: 49.48579823702253
+Task 3 average acc: 33.31554606901459
+Task 4 average acc: 24.93705941591138
+Task 5 average acc: 19.808371154815937
+===Summary of experiment repeats: 4 / 5 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [19.46545638 19.54614221 19.38477055 19.80837115  0.        ]
+mean: 15.640948058497225 std: 7.8217681316238306
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP(
+  (linear): Sequential(
+    (0): Linear(in_features=1024, out_features=400, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Linear(in_features=400, out_features=400, bias=True)
+    (3): ReLU(inplace=True)
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=400, out_features=10, bias=True)
+  )
+)
+#parameter of model: 574410
+Task order: ['1', '2', '3', '4', '5']
+====================== 1 =======================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/99]	0.1090 (0.1090)	0.1042 (0.1042)	0.694 (0.694)	0.00 (0.00)
+[98/99]	0.0022 (0.0083)	0.0006 (0.0064)	0.004 (0.189)	97.52 (97.85)
+ * Train Acc 97.852
+ * Val Acc 99.433, Total time 0.26
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/99]	0.1079 (0.1079)	0.1017 (0.1017)	0.008 (0.008)	99.22 (99.22)
+[98/99]	0.0017 (0.0083)	0.0001 (0.0065)	0.001 (0.002)	99.17 (99.53)
+ * Train Acc 99.534
+ * Val Acc 99.811, Total time 0.29
+validation split name: 1
+ * Val Acc 99.811, Total time 0.25
+====================== 2 =======================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/95]	0.1092 (0.1092)	0.1037 (0.1037)	2.216 (2.216)	25.00 (25.00)
+[94/95]	0.0017 (0.0083)	0.0001 (0.0064)	0.042 (0.193)	98.25 (93.48)
+ * Train Acc 93.482
+ * Val Acc 98.482, Total time 0.27
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/95]	0.1063 (0.1063)	0.1007 (0.1007)	0.055 (0.055)	96.88 (96.88)
+[94/95]	0.0017 (0.0084)	0.0001 (0.0066)	0.035 (0.043)	98.25 (98.44)
+ * Train Acc 98.445
+ * Val Acc 98.727, Total time 0.26
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 98.727, Total time 0.25
+====================== 3 =======================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/88]	0.1094 (0.1094)	0.1035 (0.1035)	5.363 (5.363)	0.00 (0.00)
+[87/88]	0.0170 (0.0085)	0.0151 (0.0066)	0.003 (0.145)	100.00 (95.65)
+ * Train Acc 95.649
+ * Val Acc 99.893, Total time 0.23
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/88]	0.1114 (0.1114)	0.1053 (0.1053)	0.003 (0.003)	100.00 (100.00)
+[87/88]	0.0026 (0.0084)	0.0007 (0.0066)	0.007 (0.010)	100.00 (99.72)
+ * Train Acc 99.725
+ * Val Acc 99.733, Total time 0.24
+validation split name: 1
+ * Val Acc 0.000, Total time 0.30
+validation split name: 2
+ * Val Acc 0.000, Total time 0.25
+validation split name: 3
+ * Val Acc 99.733, Total time 0.24
+====================== 4 =======================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/96]	0.1082 (0.1082)	0.1020 (0.1020)	8.574 (8.574)	0.00 (0.00)
+[95/96]	0.0016 (0.0084)	0.0001 (0.0065)	0.000 (0.178)	100.00 (96.42)
+ * Train Acc 96.421
+ * Val Acc 99.849, Total time 0.25
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/96]	0.1087 (0.1087)	0.1037 (0.1037)	0.001 (0.001)	100.00 (100.00)
+[95/96]	0.0015 (0.0086)	0.0001 (0.0068)	0.046 (0.004)	95.65 (99.91)
+ * Train Acc 99.910
+ * Val Acc 98.590, Total time 0.24
+validation split name: 1
+ * Val Acc 0.000, Total time 0.26
+validation split name: 2
+ * Val Acc 0.000, Total time 0.25
+validation split name: 3
+ * Val Acc 0.000, Total time 0.27
+validation split name: 4
+ * Val Acc 98.590, Total time 0.25
+====================== 5 =======================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+Epoch:0
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/93]	0.1175 (0.1175)	0.1117 (0.1117)	11.283 (11.283)	0.00 (0.00)
+[92/93]	0.0016 (0.0085)	0.0001 (0.0068)	0.054 (0.265)	95.83 (93.57)
+ * Train Acc 93.568
+ * Val Acc 98.084, Total time 0.24
+Epoch:1
+LR: 0.01
+Itr		Time		  Data		  Loss		Acc
+[0/93]	0.1071 (0.1071)	0.1013 (0.1013)	0.077 (0.077)	96.09 (96.09)
+[92/93]	0.0017 (0.0084)	0.0001 (0.0066)	0.014 (0.030)	100.00 (98.95)
+ * Train Acc 98.949
+ * Val Acc 98.941, Total time 0.24
+validation split name: 1
+ * Val Acc 0.000, Total time 0.25
+validation split name: 2
+ * Val Acc 0.000, Total time 0.25
+validation split name: 3
+ * Val Acc 0.000, Total time 0.23
+validation split name: 4
+ * Val Acc 0.000, Total time 0.29
+validation split name: 5
+ * Val Acc 98.941, Total time 0.24
+OrderedDict([('1', OrderedDict([('1', 99.81087470449172), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 98.72673849167482), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 99.73319103521878), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 98.5901309164149), ('5', 0.0)])), ('5', OrderedDict([('5', 98.94099848714069)]))])
+Task 1 average acc: 99.81087470449172
+Task 2 average acc: 49.36336924583741
+Task 3 average acc: 33.24439701173959
+Task 4 average acc: 24.647532729103727
+Task 5 average acc: 19.788199697428137
+===Summary of experiment repeats: 5 / 5 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [19.46545638 19.54614221 19.38477055 19.80837115 19.7881997 ]
+mean: 19.598587997982854 std: 0.1709702075676613
+reg_coef: 0.0 mean: 19.598587997982854 std: 0.1709702075676613
+Total Time for the script is 74.99062871932983 seconds
