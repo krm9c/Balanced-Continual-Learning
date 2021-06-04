@@ -1,0 +1,12 @@
+To run the code, 
+
+prerequisites are torch>1.0 and numpy
+
+Create a virtual environment torch which can be accessed by source activate torch
+
+ execute any scripts with sh in the scripts folder.
+ For example:
+ 
+ sh scripts/permuted_MNIST_incremental_class.sh
+
+would execute all the methods for permuted Mnist case. 
