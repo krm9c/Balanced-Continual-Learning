@@ -3,21 +3,26 @@ To run the code,
 prerequisites are torch>1.0 and numpy
 
 ##########.  INSTALLATIONS
+We assume that the latest version of anaconda is installed.
+
 Create a virtual environment torch which can be accessed by source activate torch
 We use the following instructions to install and setup our environment.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 conda create --name torch python=3.6
 source activate torch
 source torch/bin/activate
 pip  install numpy scipy cython matplotlib pandas ipython seaborn jupyter Jinja2
 pip  install sklearn
 conda install pytorch torchvision -c pytorch
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 ##########.  EXECUTION
 Execute any scripts with sh in the scripts folder.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  For example:
- 
  sh scripts/permuted_MNIST_incremental_class.sh
 
 would execute all the methods for permuted Mnist case. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
